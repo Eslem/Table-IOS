@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -17,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grN-JG-dd8">
-                                <rect key="frame" x="239" y="285" width="122" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grN-JG-dd8">
+                                <rect key="frame" x="324" y="498" width="122" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="122" id="KMa-Fh-Slw"/>
                                 </constraints>
@@ -29,11 +30,10 @@
                                     <segue destination="OfI-oF-Xp0" kind="show" id="imA-Qz-bVk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AO9-vx-HHF">
-                                <rect key="frame" x="304" y="545" width="139" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AO9-vx-HHF">
+                                <rect key="frame" x="128" y="326" width="105" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="139" id="S8D-yc-f0i"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="139" id="n64-sY-8z0"/>
+                                    <constraint firstAttribute="width" constant="74" id="4fr-yE-csk"/>
                                 </constraints>
                                 <state key="normal" title="Show message">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -45,11 +45,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="AO9-vx-HHF" firstAttribute="top" secondItem="grN-JG-dd8" secondAttribute="bottom" constant="85" id="84k-Ci-Sb8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AO9-vx-HHF" secondAttribute="bottom" constant="124" id="A5w-g7-VP0"/>
                             <constraint firstItem="grN-JG-dd8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JBA-vx-bNb"/>
+                            <constraint firstItem="AO9-vx-HHF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="128" id="c9e-cx-UJi"/>
                             <constraint firstItem="grN-JG-dd8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gYO-ae-QbK"/>
-                            <constraint firstItem="AO9-vx-HHF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="319" id="gzU-NQ-tCC"/>
                         </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -63,18 +67,9 @@
                         <viewControllerLayoutGuide type="bottom" id="1mI-Ta-eoz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KcM-1X-1zk">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foa-mu-Sxh">
-                                <rect key="frame" x="61" y="20" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonClick:" destination="OfI-oF-Xp0" eventType="touchDown" id="Qy4-Uj-cYH"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zhx-yz-hPO">
                                 <rect key="frame" x="0.0" y="67" width="636" height="533"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -83,9 +78,27 @@
                                     <outlet property="delegate" destination="OfI-oF-Xp0" id="AsY-X0-9Rx"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foa-mu-Sxh">
+                                <rect key="frame" x="185" y="10" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="foa-mu-Sxh" secondAttribute="height" multiplier="23:15" id="OcW-sF-0ED"/>
+                                    <constraint firstAttribute="width" secondItem="foa-mu-Sxh" secondAttribute="height" multiplier="23:15" id="VVI-eb-aZW"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="OfI-oF-Xp0" eventType="touchDown" id="Qy4-Uj-cYH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="foa-mu-Sxh" firstAttribute="top" secondItem="KcM-1X-1zk" secondAttribute="topMargin" constant="10" id="dwq-tK-TtI"/>
+                            <constraint firstAttribute="centerX" secondItem="foa-mu-Sxh" secondAttribute="centerX" id="fCc-by-ybt"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rni-d1-y7H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
