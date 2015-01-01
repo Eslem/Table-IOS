@@ -7,6 +7,7 @@
 //
 
 #import "TableViewController.h"
+#import "TableViewCell.h"
 
 @interface TableViewController ()
 
@@ -52,15 +53,18 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *simpleDataIdentifier = @"SimpleDataIdentifier";
+    static NSString *simpleDataIdentifier = @"SimpleTableCell";
     
-    UITableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:simpleDataIdentifier];
+    TableViewCell *cell = (TableViewCell *)[tableView dequeueReusableCellWithIdentifier:simpleDataIdentifier];
     
     if(cell == nil){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleDataIdentifier];
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"TableCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
     }
-    cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
-    cell.imageView.image = [UIImage imageNamed:@"DarthVader.jpg"];
+    
+    cell.nameLabel.text = [tableData objectAtIndex:indexPath.row];
+    cell.prepTimeLabel.text = @"Text";
+    cell.thumbnailImageView.image = [UIImage imageNamed:@"DarthVader.jpg"];
     
     return cell;
     

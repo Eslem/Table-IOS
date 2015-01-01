@@ -16,6 +16,8 @@
 		5D747E901A5516EF00A61EFD /* SimpleListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D747E8F1A5516EF00A61EFD /* SimpleListTests.m */; };
 		5DE9213B1A551B520041AAAA /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE9213A1A551B520041AAAA /* TableViewController.m */; };
 		5DE9213E1A551F3C0041AAAA /* DarthVader.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5DE9213D1A551F3C0041AAAA /* DarthVader.jpg */; };
+		5DE921401A5520380041AAAA /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DE9213F1A5520380041AAAA /* TableCell.xib */; };
+		5DE921431A5520D30041AAAA /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE921421A5520D30041AAAA /* TableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,9 @@
 		5DE921391A551B520041AAAA /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		5DE9213A1A551B520041AAAA /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		5DE9213D1A551F3C0041AAAA /* DarthVader.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DarthVader.jpg; sourceTree = "<group>"; };
+		5DE9213F1A5520380041AAAA /* TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableCell.xib; path = SimpleList/TableCell.xib; sourceTree = SOURCE_ROOT; };
+		5DE921411A5520D30041AAAA /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewCell.h; path = SimpleList/TableViewCell.h; sourceTree = SOURCE_ROOT; };
+		5DE921421A5520D30041AAAA /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewCell.m; path = SimpleList/TableViewCell.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +102,9 @@
 				5D747E731A5516EF00A61EFD /* Supporting Files */,
 				5DE921391A551B520041AAAA /* TableViewController.h */,
 				5DE9213A1A551B520041AAAA /* TableViewController.m */,
+				5DE9213F1A5520380041AAAA /* TableCell.xib */,
+				5DE921411A5520D30041AAAA /* TableViewCell.h */,
+				5DE921421A5520D30041AAAA /* TableViewCell.m */,
 			);
 			path = SimpleList;
 			sourceTree = "<group>";
@@ -219,6 +227,7 @@
 				5D747E841A5516EF00A61EFD /* LaunchScreen.xib in Resources */,
 				5D747E811A5516EF00A61EFD /* Images.xcassets in Resources */,
 				5DE9213E1A551F3C0041AAAA /* DarthVader.jpg in Resources */,
+				5DE921401A5520380041AAAA /* TableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +248,7 @@
 				5D747E7C1A5516EF00A61EFD /* ViewController.m in Sources */,
 				5D747E791A5516EF00A61EFD /* AppDelegate.m in Sources */,
 				5D747E761A5516EF00A61EFD /* main.m in Sources */,
+				5DE921431A5520D30041AAAA /* TableViewCell.m in Sources */,
 				5DE9213B1A551B520041AAAA /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +376,7 @@
 				INFOPLIST_FILE = SimpleList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -376,6 +387,7 @@
 				INFOPLIST_FILE = SimpleList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
