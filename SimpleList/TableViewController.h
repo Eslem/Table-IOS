@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TableViewController.h
 //  SimpleList
 //
 //  Created by Eslem Alzate on 31/12/14.
@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TableViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+
 
 -(IBAction)buttonClick:(id)sender;
 
-
 @end
-

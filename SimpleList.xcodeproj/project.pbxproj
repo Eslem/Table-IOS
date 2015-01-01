@@ -14,6 +14,8 @@
 		5D747E811A5516EF00A61EFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D747E801A5516EF00A61EFD /* Images.xcassets */; };
 		5D747E841A5516EF00A61EFD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D747E821A5516EF00A61EFD /* LaunchScreen.xib */; };
 		5D747E901A5516EF00A61EFD /* SimpleListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D747E8F1A5516EF00A61EFD /* SimpleListTests.m */; };
+		5DE9213B1A551B520041AAAA /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE9213A1A551B520041AAAA /* TableViewController.m */; };
+		5DE9213E1A551F3C0041AAAA /* DarthVader.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5DE9213D1A551F3C0041AAAA /* DarthVader.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		5D747E891A5516EF00A61EFD /* SimpleListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D747E8E1A5516EF00A61EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D747E8F1A5516EF00A61EFD /* SimpleListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleListTests.m; sourceTree = "<group>"; };
+		5DE921391A551B520041AAAA /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		5DE9213A1A551B520041AAAA /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		5DE9213D1A551F3C0041AAAA /* DarthVader.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DarthVader.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 		5D747E721A5516EF00A61EFD /* SimpleList */ = {
 			isa = PBXGroup;
 			children = (
+				5DE9213C1A551F2C0041AAAA /* Assets */,
 				5D747E771A5516EF00A61EFD /* AppDelegate.h */,
 				5D747E781A5516EF00A61EFD /* AppDelegate.m */,
 				5D747E7A1A5516EF00A61EFD /* ViewController.h */,
@@ -89,6 +95,8 @@
 				5D747E801A5516EF00A61EFD /* Images.xcassets */,
 				5D747E821A5516EF00A61EFD /* LaunchScreen.xib */,
 				5D747E731A5516EF00A61EFD /* Supporting Files */,
+				5DE921391A551B520041AAAA /* TableViewController.h */,
+				5DE9213A1A551B520041AAAA /* TableViewController.m */,
 			);
 			path = SimpleList;
 			sourceTree = "<group>";
@@ -117,6 +125,14 @@
 				5D747E8E1A5516EF00A61EFD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5DE9213C1A551F2C0041AAAA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				5DE9213D1A551F3C0041AAAA /* DarthVader.jpg */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +218,7 @@
 				5D747E7F1A5516EF00A61EFD /* Main.storyboard in Resources */,
 				5D747E841A5516EF00A61EFD /* LaunchScreen.xib in Resources */,
 				5D747E811A5516EF00A61EFD /* Images.xcassets in Resources */,
+				5DE9213E1A551F3C0041AAAA /* DarthVader.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +239,7 @@
 				5D747E7C1A5516EF00A61EFD /* ViewController.m in Sources */,
 				5D747E791A5516EF00A61EFD /* AppDelegate.m in Sources */,
 				5D747E761A5516EF00A61EFD /* main.m in Sources */,
+				5DE9213B1A551B520041AAAA /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +432,7 @@
 				5D747E951A5516EF00A61EFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D747E961A5516EF00A61EFD /* Build configuration list for PBXNativeTarget "SimpleListTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +441,7 @@
 				5D747E981A5516EF00A61EFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
